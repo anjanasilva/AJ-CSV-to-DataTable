@@ -43,7 +43,7 @@ This plugin utilizes some excellent open source scripts, functions and images wh
 
 ## Demo
 
-Please visit this page for a realtime example.
+Please [visit this page] for a realtime example.
 
 [visit this page]: http://anjanasilva.com/blog/csv-to-datatables-wordpress-plugin/
 
