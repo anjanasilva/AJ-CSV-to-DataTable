@@ -34,11 +34,11 @@ Save it, just refresh the page and see. Less hassle, all your csv data is inside
 This plugin utilizes some excellent open source scripts, functions and images whose creators deserve to be recognized.
 
 1. Shaun Scovil, for inspiring me through his [CSV to Sortable] Plugin.
-2. World renowned [DataTables] plugin by Alan.
+2. World renowned [DataTables Library] by Alan.
 3. V.Krishn wrote a handy [PHP function] that enables users of PHP < 5.3 to utilize the `str_getcsv()` function that powers this plugin.
 
 [CSV to Sortable]: https://wordpress.org/plugins/csv-to-sorttable/
-[DataTables] : https://www.datatables.net
+[DataTables Library] : https://www.datatables.net
 [PHP function]: http://github.com/insteps/phputils
 
 ## Common Errors
