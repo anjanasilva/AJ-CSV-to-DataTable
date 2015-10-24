@@ -32,7 +32,7 @@ Save it, just refresh the page and see. Less hassle, all your csv data is inside
 
 This plugin utilizes some excellent open source scripts, functions and images whose creators deserve to be recognized.
 
-1. Shaun Scovil, for inspiring me through his CSV to Sortable Plugin.
+1. Shaun Scovil, for inspiring me through his [CSV to Sortable] Plugin.
 2. V.Krishn wrote a handy [PHP function] that enables users of PHP < 5.3 to utilize the `str_getcsv()` function that powers this plugin.
 
 [CSV to Sortable]: https://wordpress.org/plugins/csv-to-sorttable/
