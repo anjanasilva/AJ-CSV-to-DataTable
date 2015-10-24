@@ -41,6 +41,12 @@ This plugin utilizes some excellent open source scripts, functions and images wh
 [DataTables Library]: https://www.datatables.net
 [PHP function]: http://github.com/insteps/phputils
 
+## Demo
+
+Please visit this page for a realtime example.
+
+[visit this page]: http://anjanasilva.com/blog/csv-to-datatables-wordpress-plugin/
+
 ## Common Errors
 
 1. If the datatable misbehaves, this is probably due to an incorrect csv format. In that case, open csv file in excel
