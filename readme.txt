@@ -6,12 +6,12 @@ Requires at least: 4.3.1
 Tested up to: 4.3.1
 Stable tag: 4.3
 
-Import data from a spreadsheet (.csv file format) and display it in a sortable HTML table.
+Wordpress Plugin to import data from a CSV file and display it in a DataTable.
 
 
 == Description ==
 
-Wordpress Plugin to present a CSV file in a DataTable. This will import data from a csv file and display in a DataTable.
+Wordpress Plugin to present a CSV file in a DataTable. This will import data from a CSV file and display in a DataTable.
 
 
 == How To Use ==
