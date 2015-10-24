@@ -26,16 +26,19 @@ Save it, just refresh the page and see. Less hassle, all your csv data is inside
 ## Installation
 
 1. Install and activate the plugin via `WP-Admin > Plugins`.
-2. Add shortcode to a post or page: `[aj-csv2dt src=http://samplecsvs.s3.amazonaws.com/SacramentocrimeJanuary2006.csv id=datatable_id]`.
+2. Add shortcode to a post or page: 
+`[aj-csv2dt src=http://e-innoving.com/samples/SacramentocrimeJanuary2006.csv id=datatable_id]`.
 
 ## Credits
 
 This plugin utilizes some excellent open source scripts, functions and images whose creators deserve to be recognized.
 
 1. Shaun Scovil, for inspiring me through his [CSV to Sortable] Plugin.
-2. V.Krishn wrote a handy [PHP function] that enables users of PHP < 5.3 to utilize the `str_getcsv()` function that powers this plugin.
+2. World renowned [DataTables] plugin by Alan.
+3. V.Krishn wrote a handy [PHP function] that enables users of PHP < 5.3 to utilize the `str_getcsv()` function that powers this plugin.
 
 [CSV to Sortable]: https://wordpress.org/plugins/csv-to-sorttable/
+[DataTables] : https://www.datatables.net
 [PHP function]: http://github.com/insteps/phputils
 
 ## Common Errors
