@@ -1,4 +1,4 @@
-=== AJ CSV to DataTable ===
+# AJ CSV to DataTable
 
 Contributors: anjanasilva
 Tags: data, table, csv, import, datatable
@@ -9,12 +9,12 @@ Stable tag: 4.3
 Import data from a CSV file and display it in a DataTable.
 
 
-== Description ==
+## Description
 
 Wordpress Plugin to present a CSV file in a DataTable. This will import data from a CSV file and display in a DataTable.
 
 
-== How To Use ==
+## How To Use
 
 Insert following code snippet into any page or post using this shortcode, make sure you use an unique id :
 
@@ -23,12 +23,12 @@ Insert following code snippet into any page or post using this shortcode, make s
 Save it, just refresh the page and see. Less hassle, all your csv data is inside the DataTable.
 
 
-== Installation ==
+## Installation
 
 1. Install and activate the plugin via `WP-Admin > Plugins`.
 2. Add shortcode to a post or page: `[aj-csv2dt src=http://samplecsvs.s3.amazonaws.com/SacramentocrimeJanuary2006.csv id=datatable_id]`.
 
-== Credits ==
+## Credits
 
 This plugin utilizes some excellent open source scripts, functions and images whose creators deserve to be recognized.
 
@@ -38,12 +38,12 @@ This plugin utilizes some excellent open source scripts, functions and images wh
 [CSV to Sortable]: https://wordpress.org/plugins/csv-to-sorttable/
 [PHP function]: http://github.com/insteps/phputils
 
-== Common Errors ==
+## Common Errors
 
 1. If the datatable misbehaves, this is probably due to an incorrect csv format. In that case, open csv file in excel
 and re-save it as a new csv. Most likely this will resolve your issue.
 
-== Changelog ==
+## Changelog
 
 = 1.0 =
 * First public release.
