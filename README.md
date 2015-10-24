@@ -38,7 +38,7 @@ This plugin utilizes some excellent open source scripts, functions and images wh
 3. V.Krishn wrote a handy [PHP function] that enables users of PHP < 5.3 to utilize the `str_getcsv()` function that powers this plugin.
 
 [CSV to Sortable]: https://wordpress.org/plugins/csv-to-sorttable/
-[DataTables Library] : https://www.datatables.net
+[DataTables Library]: https://www.datatables.net
 [PHP function]: http://github.com/insteps/phputils
 
 ## Common Errors
