@@ -3,7 +3,7 @@
  * Plugin Name: AJ CSV to DataTable
  * Plugin URI: https://github.com/anjanasilva/AJ-CSV-to-DataTable
  * Description: Import data from a spreadsheet (.csv file format) and display in a DataTable.
- * Version: 1.0
+ * Version: 1.1
  * Author: Anjana Silva
  * Author URI: http://www.anjanasilva.com
  * Text Domain: aj-csv-to-datatable
