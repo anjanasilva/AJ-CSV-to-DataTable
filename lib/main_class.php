@@ -44,6 +44,13 @@ class main_class {
         $defaults = array(
             'src'        => null,   // Source file url.
             'id'         => '',     // Optional value for <table> id attribute.
+            'disable_search'     => null, // Disable datatable search - false by default.
+            'disable_paging'     => null,  // Disable datatable pagination - false by default.
+            'disable_sorting'     => null,  // Disable datatable sorting - false by default.
+            'disable_binfo'     => null,  // Disable datatable bInfo - false by default.
+            'unsortable' => null,
+            'number' => null,
+            'date' => null,
 
         );
         $atts = shortcode_atts( $defaults, $atts );
@@ -204,9 +211,29 @@ class main_class {
             echo '</tr>';
         }
         echo '</tbody></table>';
+        
+        $dtOptionsArray = array();   
+        if($atts['disable_search'] !== null && $atts['disable_search']){
+		$dtOptionsArray[] = '"searching" : false';
+        }
+        if($atts['disable_paging'] !== null && $atts['disable_paging']){
+		$dtOptionsArray[] = '"paging" : false';
+        }
+        if($atts['disable_sorting'] !== null && $atts['disable_sorting']){
+		$dtOptionsArray[] = '"ordering" : false';
+        }
+        if($atts['disable_binfo'] !== null && $atts['disable_binfo']){
+		$dtOptionsArray[] = '"bInfo" : false';
+        }
+        
+        $dtOptions = '';
+        if(count($dtOptionsArray) != 0){
+	        $dtOptions = rtrim(implode(',',$dtOptionsArray), ',');
+        }
+        
         echo '<script>
                 jQuery(document).ready(function() {  
-                    jQuery(\'#'.$this->string_to_html_class($atts['id']).'\').DataTable();
+                    jQuery(\'#'.$this->string_to_html_class($atts['id']).'\').DataTable({ '. $dtOptions .' });
                 });
               </script>
         ';
@@ -248,16 +275,19 @@ class main_class {
         $row_classes = 'row' . strval( $row + 1 );
 
         // If 'group' shortcode attribute is set, add a group class to row classes.
-        $group = intval( $atts['group'] );
-        if ( $group > 0 && $group <= count( $cols ) ) {
-
-            // Create valid HTML class name based on group cell value.
-            $group_class = strtolower( strip_tags( $cols[strval( $group - 1 )] ) );
-            $group_class = $this->string_to_html_class( $group_class );
-
-            // Truncate group class name to a maximum of 25 characters.
-            $row_classes .= ( empty( $group_class ) ) ? '' : ' ' . substr( $group_class, 0, 25 );
+        if($atts != null && array_key_exists('group', $atts)){
+	        $group = intval( $atts['group'] );
+	        if ( $group > 0 && $group <= count( $cols ) ) {
+	
+	            // Create valid HTML class name based on group cell value.
+	            $group_class = strtolower( strip_tags( $cols[strval( $group - 1 )] ) );
+	            $group_class = $this->string_to_html_class( $group_class );
+	
+	            // Truncate group class name to a maximum of 25 characters.
+	            $row_classes .= ( empty( $group_class ) ) ? '' : ' ' . substr( $group_class, 0, 25 );
+	        }
         }
+        
         return $row_classes;
     }
 
