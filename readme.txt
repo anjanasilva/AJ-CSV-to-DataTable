@@ -45,5 +45,8 @@ and re-save it as a new csv. Most likely this will resolve your issue.
 
 == Changelog ==
 
+= 1.1 =
+* Added options to disable DataTable searching, pagination, sorting and showing of bInfo.
+
 = 1.0 =
 * First public release.
