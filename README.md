@@ -20,8 +20,11 @@ Insert following code snippet into any page or post using this shortcode, make s
 
 `[aj-csv2dt src=http://e-innoving.com/samples/SacramentocrimeJanuary2006.csv id=datatable_id]`
 
-Save it, just refresh the page and see. Less hassle, all your csv data is inside the DataTable.
+You can now disable DataTable search, pagination, sorting and displaying of bInfo with the recent 1.1 release. The purpose of this is to render a static looking HTML Table out of a CSV file. 
 
+`[aj-csv2dt src=http://e-innoving.com/samples/SacramentocrimeJanuary2006.csv id=datatable_id disable_search=true disable_paging=true disable_binfo=true disable_sorting=true]`
+
+Save it, just refresh the page and see. Less hassle, all your csv data is inside a DataTable now.
 
 ## Installation
 
@@ -53,6 +56,9 @@ Please [visit this page] for a realtime example.
 and re-save it as a new csv. Most likely this will resolve your issue.
 
 ## Changelog
+
+### 1.1
+* Added options to disable DataTable searching, pagination, sorting and showing of bInfo.
 
 ### 1.0
 * First public release.
